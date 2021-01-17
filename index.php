@@ -13,12 +13,12 @@
 <body>
     <header>
         <div>
-            <a href="#"><img src="img/logo.png" alt="logo Appetee" class="logo"></a>
+            <a href="#what"><img src="img/logo.png" alt="logo Appetee" class="logo"></a>
         </div>
         <nav>
             <ul>
                 <li>
-                    <a href="#">Accueil</a>
+                    <a href="#what">Accueil</a>
                 </li>
                 <li>
                     <a href="#fonctions">Fonctionnalités</a>
@@ -143,8 +143,26 @@
     </main>
 
     <footer>
-        
+        <article>
+            <div>
+                <a href="#what"><img src="img/logo-bl.png" alt="Logo Appetee" class="white"></a>
+            </div>
+            <div>
+                <div class="socials">
+                    <a href="https://www.facebook.com/appetee"><img src="img/facebook.png" alt="Facebook"></a>
+                    <a href="https://www.instagram.com/appetee_app/?hl=fr"><img src="img/instagram.png" alt="Instagram"></a>
+                </div>
+                <div class="downloads">
+                    <a href=""><img src="img/ios.png" alt="apple store"></a>
+                    <a href="https://play.google.com/store?hl=fr&gl=US"><img src="img/android.png" alt="google play"></a>
+                </div>
+            </div>
+        </article>
+        <p>Copyright &copy; 2021. Tous droits réservés.</p>
     </footer>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>

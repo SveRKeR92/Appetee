@@ -31,6 +31,7 @@ p {
     line-height: 1.4;
 }
 
+
 html {
     scroll-behavior: smooth;
 }
@@ -323,7 +324,7 @@ hr {
 
 #prix article div{
     width: 350px;
-    height: 530px;
+    height: 575px;
     border-radius: 20px;
     background-color: var(--white);
     padding: 40px 15px;
@@ -392,4 +393,45 @@ b{
     font-size: 30px;
     padding: 18px 56px;
     font-weight: var(--medium);
+}
+
+/* FOOTER */
+
+footer{
+    background: linear-gradient(to bottom, #ffae0d, #ee8435);
+    padding: 40px 75px;
+}
+
+.white{
+    width: 300px;
+    height: auto;
+}
+
+footer p{
+    font-size: 20px;
+    text-align: center;
+    font-weight: var(--bold);
+}
+
+footer article{
+    display: flex;
+    align-items: center;
+}
+
+.socials{
+    display: flex;
+}
+
+.downloads img{
+    width: 150px;
+    height: auto;
+    margin: 10px;
+}
+
+footer article > div:last-child{
+    display: flex;
+    width: 100%;
+    margin-left: 20%;
+    justify-content: space-around;
+    align-items: center;
 }
