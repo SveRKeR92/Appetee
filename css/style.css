@@ -1,5 +1,230 @@
-*{
+:root {
+    --grey: #535353;
+    --whitegrey: #b1acac;
+    --white: #ffffff;
+    --red: #e52924;
+    --green: #c4d11a;
+    --shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+    --red-gradient: linear-gradient(to top, #e56424, #e52924 50%);
+    --yel-gradient: linear-gradient(to bottom, #ee8435, #ffae0d);
+    --font: itc-avant-garde-gothic-pro, sans-serif;
+    --thin: 300;
+    --medium: 500;
+    --bold: 700;
+}
+
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font);
+    font-weight: var(--medium);
+    color: var(--white);
+}
+
+p {
+    font-weight: var(--thin);
+    font-size: 40px;
+    line-height: 1.4;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+li {
+    display: inline;
+}
+
+img {
+    display: block;
+}
+
+strong{
+    font-weight: var(--bold)    ;
+}
+
+/* HEADER */
+
+header {
+    padding: 30px 60px;
+    background-color: var(--white);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+}
+
+.logo {
+    width: 160px;
+    height: auto;
+}
+
+header a {
+    font-size: 30px;
+    line-height: 1.4;
+    color: var(--grey);
+}
+
+header li {
+    margin-left: 50px;
+}
+
+.sub {
+    padding: 16px 13px;
+    color: var(--white);
+    font-weight: bold;
+    border-radius: 34px;
+    box-shadow: var(--shadow);
+    background: var(--red-gradient);
+}
+
+.sub:hover {
+    box-shadow: none;
+    transition: 0.4s;
+}
+
+/* SECTION WHATS APPETEE */
+
+#what {
+    background-image: url(../img/bckg1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 100px 15%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#what .img-container {
+    margin: 0 auto;
+}
+
+#what img {
+    width: 320px;
+    height: auto;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 60px;
+    font-weight: var(--bold);
+    margin-top: 100px;
+    margin-bottom: 35px;
+}
+
+#what p {
+    width: 450px;
+}
+
+#firstform {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--white);
+    border-radius: 37px;
+    box-shadow: var(--shadow);
+    padding: 39px 41px 46px 41px;
+}
+
+label {
+    font-size: 50px;
+    font-weight: var(--bold);
+    color: var(--red);
+}
+
+#firstform div {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    border: none;
+    outline: none;
+    text-align: center;
+    width: 400px;
+    padding: 20px;
+    border-radius: 35px;
+    box-shadow: var(--shadow);
+    margin-top: 43px;
+    font-family: var(--font);
+    font-size: 30px;
+    font-weight: var(--thin);
+    color: var(--whitegrey);
+}
+
+input::placeholder {
+    color: var(--whitegrey);
+}
+
+button {
+    padding: 18px 85px;
+    border: none;
+    border-radius: 34px;
+    box-shadow: var(--shadow);
+    background-image: var(--yel-gradient);
+    color: var(--white);
+    font-size: 30px;
+    font-family: var(--font);
+    font-weight: var(--bold);
+}
+
+button:hover {
+    cursor: pointer;
+    box-shadow: none;
+    transition: 0.4s;
+}
+
+/* SECTION FONCTIONNALITES     */
+
+.yel-bcg {
+    background: var(--yel-gradient);
+}
+
+#fonctions {
+    padding: 60px 0 100px 0;
+}
+
+h2 {
+    font-size: 90px;
+    font-weight: var(--bold);
+    text-align: center;
+}
+
+hr {
+    width: 320px;
+    height: 6px;
+    background-color: var(--green);
+    border: none;
+    margin: 0 auto;
+    margin-top: 35px;
+}
+
+#fonctions > div{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#fonctions article{
+    width: min-content;
+}
+
+#fonctions p {
+    text-align: center;
+}
+
+/* SECTION RECETTES */
+
+#recettes{
+    background-image: url(../img/bckg-2);
 }
