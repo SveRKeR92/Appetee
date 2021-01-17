@@ -91,8 +91,60 @@
             </article>
         </section>
 
+        <section id="infos">
+            <h2>À propos</h2>
+            <hr>
+            <div>
+                <aside>
+                    <a href="https://www.linkedin.com/in/carole-dumoulin-956508150"><img src="img/carole.png" alt="Carole"></a>
+                    <a class="supperpos" href="https://www.linkedin.com/in/as98/"><img src="img/antony.png" alt="Antony"></a>
+                </aside>
+                <article>
+                    <p>Étudiants au Pôle Léonard de Vinci en première année du cycle d’ingénieur, nous développons un projet.<br>Cette production nous tient à coeur et nous avons décidé de la développer.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="prix">
+            <h2>Prix</h2>
+            <hr>
+            <article>
+                <div class="free">
+                    <h4>Version FREEMIUM</h4>
+                    <span>GRATUITE</span>
+                    <ul>
+                        <li>Nombre de recettes limité</li>
+                        <li>Nombre limité de suggestions</li>
+                        <li>Nombre de recherche limité</li>
+                        <li>Recettes pour 1 à 2 personnes</li>
+                        <li>Publicités</li>
+                    </ul>
+                </div>
+                <div class="prem">
+                    <h4>Version PREMIUM</h4>
+                    <span>4,99€</span>
+                    <p class="spec">par mois ou 49,99€/an</p>
+                    <ul>
+                        <li>Les éléments de la version freemium en illimité +</li>
+                        <li>Quantités adaptées</li>
+                        <li>Liste de courses automatiques</li>
+                        <li>Planifier les repas</li>
+                        <li>Mettre des recettes en favoris</li>
+                        <li>Pas de publicités</li>
+                    </ul>
+                </div>
+            </article>
+            <p>Vous êtes étudiant ?<br>Bénéficiez de <b>-50%</b> sur la version premium</p>
+            <div class="divlink">
+                <a href="#nom" class="sub">Je souscris</a>
+            </div>
+        </section>
+    
     </main>
-    <footer></footer>
+
+    <footer>
+        
+    </footer>
 </body>
 
 </html>

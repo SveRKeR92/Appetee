@@ -41,6 +41,7 @@ a {
 }
 
 li {
+    list-style-type: none;
     display: inline;
 }
 
@@ -48,13 +49,14 @@ img {
     display: block;
 }
 
-strong{
-    font-weight: var(--bold)    ;
+strong {
+    font-weight: var(--bold);
 }
 
 /* HEADER */
 
 header {
+    z-index: 2;
     padding: 30px 60px;
     background-color: var(--white);
     display: flex;
@@ -209,13 +211,13 @@ hr {
     margin-top: 35px;
 }
 
-#fonctions > div{
+#fonctions>div {
     margin-top: 50px;
     display: flex;
     justify-content: space-evenly;
 }
 
-#fonctions article{
+#fonctions article {
     width: min-content;
 }
 
@@ -225,6 +227,169 @@ hr {
 
 /* SECTION RECETTES */
 
-#recettes{
-    background-image: url(../img/bckg-2);
+#recettes {
+    background-image: url(../img/bckg2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 60px 0 70px 0;
+}
+
+#recettes article {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 110px;
+    border-radius: 36px;
+    padding: 0px 40px 40px 40px;
+    backdrop-filter: blur(50px);
+}
+
+#recettes img {
+    margin-top: 70px;
+    width: 470px;
+    height: auto;
+}
+
+#recettes div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#recettes p {
+    text-align: center;
+    margin-top: 100px;
+}
+
+/* SECTION INFOS */
+
+#infos {
+    background: var(--yel-gradient);
+    padding: 50px 120px 100px 120px;
+}
+
+#infos aside{
+    display: flex;
+}
+
+#infos div{
+    display: flex;
+    align-items: center;
+    margin-top: 70px;
+}
+
+#infos a{
+    border-radius: 50%;
+    border: 5px solid #f2f2ff;
+    overflow: hidden;
+}
+
+#infos img{
+    width: 300px;
+    height: auto;
+    box-shadow: var(--shadow);
+	transform: scale(1);
+	transition: .3s ease-in-out;
+}
+
+#infos img:hover{
+	transform: scale(1.3);
+}
+
+.supperpos{
+    z-index: 1;
+    margin-left: -50px;
+}
+
+#infos article{
+    margin-left: 110px;
+}
+
+/* SECTION PRIX */
+
+#prix{
+    background-image: url('../img/bckg3.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 65px 0 100px 0;
+}
+
+#prix article{
+    display: flex;
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 110px;
+    justify-content: space-evenly;
+}
+
+#prix article div{
+    width: 350px;
+    height: 530px;
+    border-radius: 20px;
+    background-color: var(--white);
+    padding: 40px 15px;
+}
+
+#prix article ul{
+    display: flex;
+    flex-direction: column;
+}
+
+#prix article li{
+    font-size: 18px;
+    color: #9f9f9f;
+    margin-top: 25px;
+}
+
+
+h4{
+    font-size: 35px;
+    font-weight: var(--medium);
+    text-align: center;
+}
+
+span{
+    display: block;
+    font-size: 56px;
+    font-weight: var(--bold);
+    text-align: center;
+    margin-top: 40px;
+}
+
+.free h4, .free span{
+    color: var(--green);
+}
+
+.free ul{
+    margin-top: 80px;
+}
+
+.prem h4, .prem span, .prem p{
+    color: var(--red);
+}
+
+.prem p {
+    text-align: center;
+    font-size: 15px;
+}
+
+#prix p{
+    margin-top: 70px;
+    text-align: center;
+}
+
+b{
+    font-weight: var(--bold);
+    color: #f18d2b;
+}
+
+.divlink{
+    width: fit-content;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.divlink a{
+    font-size: 30px;
+    padding: 18px 56px;
+    font-weight: var(--medium);
 }
