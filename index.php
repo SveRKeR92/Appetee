@@ -1,3 +1,9 @@
+<?php
+include "./Database/database.php";
+include "./post.php";
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -49,8 +55,20 @@
                     <p>Une application qui te propose des recettes simples et adaptées à tes goûts ou à ceux de ton groupes afin de finir vos assiettes.</p>
                 </div>
             </article>
-            <form action="#" method="POST" id="firstform">
+            <a href="#nom" class="sub hidden">Je souscris</a>
+            <form action="#" method="POST">
                 <label for="#nom">Abonnez-vous !</label>
+                <?php
+                    if(!empty($erreurs)){
+                        ?>
+                        <div class="error"><?= implode('<br>', $erreurs) ?></div>
+                        <?php
+                    }else{
+                        ?>
+                        <div class="success">Merci pour votre inscription !</div>
+                        <?php
+                    }
+                ?>
                 <div>
                     <input type="text" id="nom" name="nom" placeholder="Nom">
                     <input type="text" id="prenom" name="prenom" placeholder="Prénom">
@@ -101,6 +119,7 @@
                 </aside>
                 <article>
                     <p>Étudiants au Pôle Léonard de Vinci en première année du cycle d’ingénieur, nous développons un projet.<br>Cette production nous tient à coeur et nous avons décidé de la développer.</p>
+                    <p class="hidden">Notre équipe constituée de Antony et Carole a vu le jour en septembre 2018.</p>
                 </article>
             </div>
         </section>
@@ -139,7 +158,7 @@
                 <a href="#nom" class="sub">Je souscris</a>
             </div>
         </section>
-    
+
     </main>
 
     <footer>
@@ -147,20 +166,40 @@
             <div>
                 <a href="#what"><img src="img/logo-bl.png" alt="Logo Appetee" class="white"></a>
             </div>
+            <form action="#" method="POST" class="formhidden">
+                <label for="#nom2">Abonnez-vous !</label>
+                <?php
+                    if(!empty($erreurs)){
+                        ?>
+                        <div class="error"><?= implode('<br>', $erreurs) ?></div>
+                        <?php
+                    }else{
+                        ?>
+                        <div class="success">Merci pour votre inscription !</div>
+                        <?php
+                    }
+                ?>
+                <div>
+                    <input type="text" id="nom2" name="nom" placeholder="Nom">
+                    <input type="text" id="prenom2" name="prenom" placeholder="Prénom">
+                    <input type="text" id="email2" name="email" placeholder="Email">
+                </div>
+                <button>Ok</button>
+            </form>
             <div>
                 <div class="socials">
                     <a href="https://www.facebook.com/appetee"><img src="img/facebook.png" alt="Facebook"></a>
                     <a href="https://www.instagram.com/appetee_app/?hl=fr"><img src="img/instagram.png" alt="Instagram"></a>
                 </div>
                 <div class="downloads">
-                    <a href=""><img src="img/ios.png" alt="apple store"></a>
+                    <a href="https://www.apple.com/fr/ios/app-store/"><img src="img/ios.png" alt="apple store"></a>
                     <a href="https://play.google.com/store?hl=fr&gl=US"><img src="img/android.png" alt="google play"></a>
                 </div>
             </div>
         </article>
         <p>Copyright &copy; 2021. Tous droits réservés.</p>
     </footer>
-    
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="js/script.js"></script>
 </body>

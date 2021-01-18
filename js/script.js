@@ -1,15 +1,13 @@
-$('button').on('click',function(e){
-    e.preventDefault();
-})
-
 $(document).ready(function() {
     $('a').on('click', function() {
-        var anchor = $(this).attr('href'); // Page cible
+        let anchor = $(this).attr('href'); // Page cible
+        let headHeight = $('header').height();
+        console.log(headHeight);
         console.log(anchor);
         if(anchor != "#nom"){
-            $('html, body').animate( { scrollTop: $(anchor).offset().top - 150 });
+            $('html, body').animate( { scrollTop: $(anchor).offset().top - (headHeight+60) });
         }else{
-            $('html, body').animate( { scrollTop: $(anchor).offset().top - 400 });
+            $('html, body').animate( { scrollTop: $(anchor).offset().top - (headHeight+300) });
             $('#nom').focus();
         }
         return false;
