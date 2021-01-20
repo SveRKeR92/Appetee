@@ -432,6 +432,7 @@ footer{
 footer p{
     font-size: 20px;
     text-align: center;
+    margin-top: 10px;
     font-weight: var(--bold);
 }
 
@@ -515,7 +516,7 @@ footer article > div:last-child{
     }
 
     .supperpos{
-        margin-left: 0;
+        margin-left: 10px;
     }
 
     #infos article{
@@ -549,7 +550,7 @@ footer article > div:last-child{
 
     #what{
         display: block;
-        padding: 100px 15px;
+        padding: 50px 15px;
     }
 
     #what p{
@@ -634,6 +635,7 @@ footer article > div:last-child{
 
     footer article > div:last-child{
         margin-left: 0;
+        flex-direction: column;
     }
 
     #infos{
@@ -647,7 +649,7 @@ footer article > div:last-child{
     }
     
     #infos img{
-        width: 150px;
+        width: 130px;
     }
 }
 
@@ -671,7 +673,7 @@ footer article > div:last-child{
     }
 
     #fonctions img{
-        width: 300px;
+        width: 280px;
     }
 }
 

@@ -1,7 +1,5 @@
 <?php
 include "./Database/database.php";
-include "./post.php";
-
 ?>
 
 <!DOCTYPE html>
@@ -63,12 +61,9 @@ include "./post.php";
                         ?>
                         <div class="error"><?= implode('<br>', $erreurs) ?></div>
                         <?php
-                    }else{
-                        ?>
-                        <div class="success">Merci pour votre inscription !</div>
-                        <?php
                     }
                 ?>
+                        <div class="success"></div>
                 <div>
                     <input type="text" id="nom" name="nom" placeholder="Nom">
                     <input type="text" id="prenom" name="prenom" placeholder="Prénom">
@@ -173,12 +168,8 @@ include "./post.php";
                         ?>
                         <div class="error"><?= implode('<br>', $erreurs) ?></div>
                         <?php
-                    }else{
-                        ?>
-                        <div class="success">Merci pour votre inscription !</div>
-                        <?php
-                    }
-                ?>
+                    }?>
+                        <div class="success"></div>
                 <div>
                     <input type="text" id="nom2" name="nom" placeholder="Nom">
                     <input type="text" id="prenom2" name="prenom" placeholder="Prénom">
@@ -202,6 +193,9 @@ include "./post.php";
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="js/script.js"></script>
+    <?php
+        include "./post.php";
+    ?>
 </body>
 
 </html>
