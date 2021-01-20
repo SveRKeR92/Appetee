@@ -341,7 +341,7 @@ hr {
 
 #prix article div{
     width: 350px;
-    height: 520px;
+    min-height: 520px;
     border-radius: 20px;
     background-color: var(--white);
     padding: 40px 15px;
@@ -635,7 +635,11 @@ footer article > div:last-child{
 
     footer article > div:last-child{
         margin-left: 0;
-        flex-direction: column;
+        flex-direction: column-reverse;
+    }
+
+    .downloads{
+        display: flex;
     }
 
     #infos{
@@ -688,5 +692,10 @@ footer article > div:last-child{
 
     label{
         font-size: 25px;
+    }
+
+    .downloads img{
+        width: 130px;
+        margin: 10px 5px;
     }
 }
