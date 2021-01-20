@@ -1,5 +1,6 @@
 <?php
 include "./Database/database.php";
+include "./post.php";
 ?>
 
 <!DOCTYPE html>
@@ -11,6 +12,7 @@ include "./Database/database.php";
     <meta name="description" content="Appetee, une application créée par des étudiants pour cuisiner en groupe et que tout le monde puisse finir son assiette !">
     <link rel="stylesheet" href="https://use.typekit.net/hkz4cey.css">
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <title>Appetee</title>
 </head>
 
@@ -57,13 +59,12 @@ include "./Database/database.php";
             <form action="#" method="POST">
                 <label for="#nom">Abonnez-vous !</label>
                 <?php
-                    if(!empty($erreurs)){
-                        ?>
-                        <div class="error"><?= implode('<br>', $erreurs) ?></div>
-                        <?php
-                    }
+                if (!empty($_POST) && empty($erreurs)) { ?>
+                    <div class="success">Merci pour votre inscription !</div>
+                <?php } else if (!empty($erreurs)) { ?>
+                    <div class="error"><?= implode('<br>', $erreurs) ?></div>
+                <?php }
                 ?>
-                        <div class="success"></div>
                 <div>
                     <input type="text" id="nom" name="nom" placeholder="Nom">
                     <input type="text" id="prenom" name="prenom" placeholder="Prénom">
@@ -164,12 +165,12 @@ include "./Database/database.php";
             <form action="#" method="POST" class="formhidden">
                 <label for="#nom2">Abonnez-vous !</label>
                 <?php
-                    if(!empty($erreurs)){
-                        ?>
-                        <div class="error"><?= implode('<br>', $erreurs) ?></div>
-                        <?php
-                    }?>
-                        <div class="success"></div>
+                if (!empty($_POST) && empty($erreurs)) { ?>
+                    <div class="success">Merci pour votre inscription !</div>
+                <?php } else if (!empty($erreurs)) { ?>
+                    <div class="error"><?= implode('<br>', $erreurs) ?></div>
+                <?php }
+                ?>
                 <div>
                     <input type="text" id="nom2" name="nom" placeholder="Nom">
                     <input type="text" id="prenom2" name="prenom" placeholder="Prénom">
@@ -191,11 +192,8 @@ include "./Database/database.php";
         <p>Copyright &copy; 2021. Tous droits réservés.</p>
     </footer>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
     <script src="js/script.js"></script>
-    <?php
-        include "./post.php";
-    ?>
 </body>
 
 </html>

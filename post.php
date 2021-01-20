@@ -29,10 +29,6 @@ if (!empty($_POST)) {
             $insert_bdd->bindParam(':prenom', $prenom, PDO::PARAM_STR);
             $insert_bdd->bindParam(':email', $email, PDO::PARAM_STR);
             $insert_bdd->execute();
-            echo "<script>
-                    $('.success').html('Merci pour votre inscription !');
-                </script>";
         }
     }
 }
-
